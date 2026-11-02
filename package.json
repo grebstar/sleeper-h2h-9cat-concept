@@ -1,0 +1,13 @@
+{
+  "name": "sleeper-h2h-9cat-concept",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Fan-built concept: H2H 9-category fantasy basketball (redraft + dynasty) engine and interactive demo.",
+  "scripts": {
+    "data": "python3 scripts/build_players.py",
+    "test": "node --test tests/*.test.js",
+    "build": "sh scripts/compose.sh && node scripts/build.mjs"
+  },
+  "devDependencies": { "esbuild": "0.24.0" }
+}
